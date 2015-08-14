@@ -1,0 +1,286 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body {
+	background: #f1f1f1;
+	font-family：'微软雅黑'；
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	min-width: 870px;
+	font-family： "Microsoft YaHei" ! important；	
+}
+canvas{
+	display: block;
+}
+/*@media screen and (min-device-width:1300px){*/
+ #header{
+	width: 100%;
+	height: 40px;
+	float:left;
+	font-size: 30px;
+	background: #393f4f;
+	}
+#header h3{
+	line-height:40px;
+	color: #fff;
+	margin-left:20px;
+}
+#content {
+	width:100%;
+	height:auto;
+	background:#f1f1f1;
+}
+#tool {
+	height:190px;
+	background: #fff;
+	border-bottom: 1px solid #dbdbdb;
+}
+#tool li {
+	float: left;
+	border-top:0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	/*background: #f1f1f1;*/
+	border-right: 1px solid #dbdbdb;
+	border-style: dashed;
+	text-align: center;
+}
+#tool .type{
+  font-size: 14px;
+  color: #5a6378;
+  line-height: 20px;
+  font-weight:600;
+  padding-bottom: 10px;
+
+}
+#image{
+	width: 140px;
+	padding:20px 20px 0px 20px;
+	height: 100px;
+	float: left;
+}
+#image li{
+	width: 132px;
+	height: 32px;
+	color:#dbdbdb;
+	border: 0px;
+	margin: 5px;
+}
+#saveImage .saveimg{
+	background: url(../img/tool.png);
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#saveImage{
+	color: 127823;
+	line-height: 32px;
+}
+#cleanImage .cleanimg{
+	background: url(../img/tool.png) 0px -32px;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 10px;
+	display: inline-block;
+}
+#gongju {
+	width:110px;
+	padding:20px 20px 0px 20px;;
+	height: 100px;
+}
+#gongju li {
+	height: 32px;
+	width: 32px;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+}
+#gongjuBrush .brush{
+	background: url(../img/tool.png) -32px 0px;
+	width: 32px;
+	height: 32px;
+}
+#gongjuEraser .eraser{
+	background: url(../img/tool.png) -64px 0px;
+	width: 32px;
+	height: 32px;
+}
+#gongjuPaint .paint{
+	background: url(../img/tool.png) -96px 0px;
+	width: 32px;
+	height: 32px;
+}
+#gongjuStraw .straw{
+	background: url(../img/tool.png) -32px -32px;
+	width: 32px;
+	height: 32px;
+}
+#gongjuText .text{
+	background: url(../img/tool.png) -64px -32px;
+	width: 32px;
+	height: 32px;
+}
+#gongjuMagnifier .magnifier{
+	background: url(../img/tool.png) -96px -32px;
+	width: 32px;
+	height: 32px;
+}
+#shape {
+	width:110px;
+	padding:20px 20px 0px 20px;;
+	height: 100px;
+}
+#shape li {
+	height: 32px;
+	width: 32px;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+}
+#shapeLine .line{
+	background: url(../img/img.png);
+	width: 32px;
+	height: 32px;
+}
+#shapeArc .arc{
+	background: url(../img/img.png) -64px 0px;
+	width: 32px;
+	height: 32px;
+}
+#shapeRect .rect{
+	background: url(../img/img.png) -32px 0px;
+	width: 32px;
+	height: 32px;
+}
+#shapePoly .poly{
+	background: url(../img/img.png) -96px 0px;
+	width: 32px;
+	height: 32px;
+}
+#shapeArcfill .arcfill{
+	background: url(../img/img.png) -64px -32px;
+	width: 32px;
+	height: 32px;
+
+}
+#shapeRectfill .rectfill{
+	background: url(../img/img.png) -32px -32px;
+	width: 32px;
+	height: 32px;
+}
+#gongju li :hover, #shape li :hover{
+	height: 32px;
+	width: 32px;
+	margin-bottom: 10px;
+}
+#image li:hover{
+	height: 32px;
+	background-color: rgba(0,0,0,0.2);
+   -webkit-border-radius: 5px;
+}
+#size {
+	width: 140px;
+	padding:20px 20px 0px 20px;
+	height: 100px;
+}
+#size li {
+	height: 20px;
+	width: 120px;
+	border: 0;
+
+}
+#size li:hover {
+	height: 20px;
+	width: 120px;
+}
+#sizeLine1  hr{
+	width:100px;
+	height: 1px; 
+	background-color: #000;
+	margin:9px 10px 10px 10px;
+}
+#sizeLine3  hr{
+	width:100px;
+	height: 3px; 
+	background-color: #000;
+	margin:8px 10px 9px 10px;
+}
+#sizeLine5  hr{
+	width:100px;
+	height: 5px; 
+	background-color: #000;
+	margin:7px 10px 8px 10px;
+}
+#sizeLine8  hr{
+	width:100px;
+	height: 8px; 
+	background-color: #000;
+	margin:6px 10px 6px 10px;
+}
+#color {
+	width: 140px;
+	padding:20px 20px 0px 20px;
+	height: 100px;
+}
+#color li {
+	width: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	margin-right: 3px;
+}
+#color li :hover {
+	width: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	margin-right: 3px;
+}
+#color #red {
+	background: red;
+}
+#color #green {
+	background: green;
+}
+#color #blue {
+	background: blue;
+}
+#color #yellow {
+	background: yellow;
+}
+#color #white {
+	background: white;
+}
+#color #black {
+	background: black;
+}
+#color #pink {
+	background: pink;
+}
+#color #orange {
+	background: orange;
+}
+#color #purple {
+	background: purple;
+}
+#color #cyan {
+	background: cyan;
+}
+#j_canvas {
+	background:#fff;
+}
+}
+#j_canvas:hover {
+	cursor: crosshair;
+}
+#footer {
+	width: 100%;
+	text-align: center;
+}
+#footer small{
+	margin: auto;
+}
+

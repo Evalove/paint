@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>h5做的画图板</title>
+		<link rel="stylesheet" href="css/paint.css" />
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<meta name="viewport" content="width=device-widt,initial-sacle=1" />
+	</head>
+
+	<body>
+		<header id="header"><h3>Paint</h3></header>
+		<section id="content">
+			<ul id="tool">
+				<li>
+					<ul id="image">
+						<li id="saveImage"   onclick="saveImage()">
+							<span class="saveimg"></span>保存图片
+						</li>
+						<li id="cleanImage" onclick="cleanImage()">
+							<span class="cleanimg"></span>清空画布
+						</li>
+					</ul>
+				   <div class="type">图像</div> 
+
+				</li>
+				<li>
+					<ul id="gongju">
+						<li id="gongjuBrush" onclick="drawBrush(0)"><div class="brush"></div></li>
+						<li id="gongjuEraser" onclick="drawEraser(1)"><div class="eraser"></div></li>
+						<li id="gongjuPaint" onclick="drawPaint(2)"><div class="paint"></div></li>
+						<li id="gongjuStraw" onclick="drawStraw(3)"><div class="straw"></div></li>
+						<li id="gongjuText" onclick="drawText(4)"><div class="text"></div></li>
+						<li id="gongjuMagnifier" onclick="drawMagnifier(5)"><div class="magnifier"></div></li>
+					</ul>
+				<div class="type">工具</div> 
+				</li>
+				<li>
+					<ul id="shape">
+						<li id="shapeLine" onclick="drawLine(6)"><div class="line"></div></li>
+						<li id="shapeArc" onclick="drawArc(7)"><div class="arc"></div></li>
+						<li id="shapeRect" onclick="drawRect(8)"><div class="rect"></div></li>
+						<li id="shapePoly" onclick="drawPoly(9)"><div class="poly"></div></li>
+						<li id="shapeArcfill" onclick="drawArcfill(10)"><div class="arcfill"></div></li>
+						<li id="shapeRectfill" onclick="drawRectfill(11)"><div class="rectfill"></div></li>
+					</ul>
+					 <div class="type">形状</div> 
+				</li>
+				<li>
+
+
+					<ul id="size">
+						<li id="sizeLine1" onclick="setLine1(0)"><hr/> </li>
+						<li id="sizeLine3" onclick="setLine1(1)"><hr/></li>
+						<li id="sizeLine5" onclick="setLine1(2)"><hr/></li>
+						<li id="sizeLine8" onclick="setLine1(3)"><hr/></li>
+
+					</ul>
+					 <div class="type">粗细</div> 
+				</li>
+				<li>
+					<ul id="color">
+						<li id="red" onclick="setColor(this,0)"></li>
+						<li id="green" onclick="setColor(this,1)"></li>
+						<li id="blue" onclick="setColor(this,2)"></li>
+						<li id="yellow" onclick="setColor(this,3)"></li>
+						<li id="white" onclick="setColor(this,4)"></li>
+						<li id="black" onclick="setColor(this,5)"></li>
+						<li id="pink" onclick="setColor(this,6)"></li>
+						<li id="purple" onclick="setColor(this,7)"></li>
+						<li id="cyan" onclick="setColor(this,8)"></li>
+						<li id="orange" onclick="setColor(this,9)"></li>
+					</ul>
+					<div class="type">颜色</div> 
+				</li>
+			</ul>
+			<canvas  id="j_canvas">
+				对不起你的浏览器不支持画图板，请您换个浏览器
+			</canvas>
+		</section>
+		<div id="footer"><small>版权所有</small></div>
+		 <script src="js/canvas.js"></script>
+	</body>
+
+</html>
