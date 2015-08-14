@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+canvas{
+    display:block;
+}
+#footer{
+    width:100%;
+    height:45px;
+    background:#eee;
+    display:block;
+    min-width:200px;
+}
+.tool_bar{
+    height:45px;
+}
+.tool_bar li{
+    float:left;
+    height:43px;
+    width:14.285%;
+    list-style-type:none;
+    border-right: 0px;
+}
+input{
+    font-size:0px;
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    display:block;
+    border-style:none;
+}
+#brush,#eraser,#clean,#save,#tool{
+    background:url(../img/tool.png);
+}
+
+#brush{
+    background-position:-32px 0px;
+}
+#tool{
+    background-position:-32px -32px;
+}
+#eraser{
+    background-position:-64px 0px;
+}
+
+#clean{
+    background-position:0px -32px;
+}
+#save{
+    background-position:0px 0px;
+}
+#altBox{
+    display:none;
+    background:#eee;
+    width:100%;
+    height:100px;
+    padding:0px;
+}
+#altBox .type{
+    height:34px;
+    list-style:none;
+    min-width:200px;
+}
+.type li{
+    width:20%;
+    height:32px;
+    float:left;
+    list-style:none;
+}
+#setSize1,#setSize3,#setSize5,#setSize7,#setSize9,#backout,#shapeDefault,#shapeEllipse,#shapeEllipseFill{
+    background:url(../img/size.png);
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    display:block;
+    border-style:none;
+}
+#setSize1{
+    background-position:0px 0px;
+}
+#setSize3{
+    background-position:-32px 0px;
+}
+#setSize5{
+    background-position:-64px 0px;
+}
+#setSize7{
+    background-position:-96px 0px;
+}
+#setSize9{
+    background-position:-128px 0px;
+}
+#shapeEllipse{
+    background-position:-191px -32px;
+}
+#shapeDefault{
+    background-position:-158px -32px;
+}
+#shapeEllipseFill{
+    background-position:-160px 0px;
+}
+#backout{
+    background-position:-224px -32px;
+}
+#shapeLine,#shapeRect,#shapeArc,#shapePoly,#shapeRectFill,#shapeArcFill,#shapePolyFill{
+    background:url(../img/img.png);
+    width:32px;
+    height:32px;
+    margin:0 auto;
+    display:block;
+    border:none;
+}
+#shapeLine{
+    background-position:0px 0px;
+}
+#shapeRect{
+    background-position:-32px 0px;
+}
+#shapeArc{
+    background-position:-64px 0px;
+}
+#shapePoly{
+    background-position:-96px 0px;
+}
+#shapeRectFill{
+    background-position:-32px -32px;
+}
+#shapeArcFill{
+    background-position:-64px -32px; 
+}
+#shapePolyFill{
+    background-position:-96px -32px;
+}
+#toolAltBox{
+    display:none;
+}
+#eraserAltBox{
+    display:none;
+}
