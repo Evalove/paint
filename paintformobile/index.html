@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>手机端的画图板</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width = device-width, user-scalable = no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<canvas id="canvas">
+   对不起，你的浏览器不支持canvas，请升级你的浏览器
+</canvas>
+<div id="content">
+<footer id="footer">
+    <ul class="tool_bar">
+        <li>
+            <input type="color" id="color"/>
+        </li>
+        <li>
+            <input type="button" id="brush" class="active" />
+        </li>
+        <li>
+            <input type="button" id="tool"/>
+        </li>
+        <li>
+            <input type="button" id="eraser"/>
+        </li>
+        <li>
+            <input type="button" id="backout"/>
+        </li>
+        <li>
+            <input type="button" id="clean"/>
+        </li>
+        <li>
+        <a id="saveImage" download="myImage.jpg"><input type="button" id="save"/></a>
+        </li>
+    </ul>
+</footer>
+<div id="altBox">
+    <div id="shapeBox">
+        <ul>
+            <li class="type" id="sizeChoose">
+                <ul class="size">
+                    <li><input type="button" id="setSize1" class="active" /></li>
+                    <li><input type="button" id="setSize3"/></li>
+                    <li><input type="button" id="setSize5"/></li>
+                    <li><input type="button" id="setSize7"/></li>
+                    <li><input type="button" id="setSize9"/></li>
+                </ul>
+            </li>
+            <section id="shapeChoose">
+            <li class="type">
+                <ul class="shape">
+                    <li><input type="button" id="shapeDefault" class="active"/></li>
+                    <li><input type="button" id="shapeRect"/></li>
+                    <li><input type="button" id="shapePoly"></li>
+                    <li><input type="button" id="shapeArc"></li>
+                    <li><input type="button" id="shapeEllipse"></li>
+                </ul>
+            </li>
+            <li class="type">
+                <ul class="shapeFill">
+                    <li><input type="button" id="shapeLine"/></li>
+                    <li><input type="button" id="shapeRectFill"/></li>
+                    <li><input type="button" id="shapePolyFill"/></li>
+                    <li><input type="button" id="shapeArcFill"/></li>
+                    <li><input type="button" id="shapeEllipseFill"/></li>
+                </ul>
+            </li>
+            </section >
+        </ul>
+    </div>
+    <div id="toolAltBox">
+        <ul>
+            <li class="type">
+                <ul class="toolType">
+                    <li><input type="button" id="toolStraw" class="active"/></li>
+                    <li><input type="button" id="toolText"/></li>
+                    <li><input type="button" id="toolBackground"/></li>
+                    <li><input type="button" id="setSize7"/></li>
+                    <li><input type="button" id="setSize9"/></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="eraserAltBox">
+        <ul>
+            <li class="type">
+                <ul class="size">
+                    <li><input type="button" id="setSize1" /></li>
+                    <li><input type="button" id="setSize3" class="active"/></li>
+                    <li><input type="button" id="setSize5"/></li>
+                    <li><input type="button" id="setSize7"/></li>
+                    <li><input type="button" id="setSize9"/></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<script src="js/canvas.js"></script>
+</body>
+</html>
